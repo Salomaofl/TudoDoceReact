@@ -1,0 +1,65 @@
+/* Estilos para o Header */
+header {
+  background-color: #A5B4BB;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header a.logo {
+  width: 111px;
+  height: 90px;
+  background-size: cover;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  margin: 0 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-icon {
+  display: none; /* Esconder no desktop */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #A5B4BB;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}

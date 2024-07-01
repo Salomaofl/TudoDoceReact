@@ -11,28 +11,12 @@ body {
   color: #A47240; /* Cor do texto similar à logo */
 }
 
-header {
-  background-color: #A5B4BB;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-header a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
 header a.logo {
-  width: 111px;
-  height: 90px;
-  background-image: url('/assets/logo.png');
-  background-size: cover;
+  background-image: url('./assets/Logo.png'); /* Certifique-se de que o nome e caminho estão corretos */
 }
+
+/* ...restante dos estilos... */
+
 
 .nav-links {
   display: flex;
