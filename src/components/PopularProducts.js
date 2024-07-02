@@ -1,44 +1,67 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../assets/Logo.png';
-import image1 from '../assets/image1.png';
+import teste2 from '../assets/teste2.jpg';
+import color from '../assets/color.jpg';
+import oi from '../assets/oi.jpg';
+import cupcake from '../assets/cupcake.jpg';
 
 const PopularProductsContainer = styled.section`
-  padding: 30px 20px;
+  padding: 60px 20px;
   text-align: center;
+  background: #f5f5f7;
 `;
 
 const PopularProductsTitle = styled.h2`
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #A47240;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: 'SF Pro Display', sans-serif;
 `;
 
 const ProductGallery = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 40px;
+`;
+
+const ProductCard = styled.div`
+  width: 250px; /* Largura fixa do card */
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 const ProductImage = styled.img`
-  width: 190px; /* Aumentando o tamanho da imagem */
-  height: 190px; /* Aumentando o tamanho da imagem */
-  margin: 20px; /* Ajustando a margem */
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.05);
-  }
 `;
 
 const PopularProducts = () => (
   <PopularProductsContainer className="popular-products">
     <PopularProductsTitle>Doces populares</PopularProductsTitle>
     <ProductGallery className="product-gallery">
-      <ProductImage src={image1} alt="Produto 1" />
-      <ProductImage src={image1} alt="Produto 2" />
-      <ProductImage src={image1} alt="Produto 3" />
-      <ProductImage src={image1} alt="Produto 4" />
+      <ProductCard>
+        <ProductImage src={color} alt="Produto 1" />
+      </ProductCard>
+      <ProductCard>
+        <ProductImage src={oi} alt="Produto 2" />
+      </ProductCard>
+      <ProductCard>
+        <ProductImage src={oi} alt="Produto 3" />
+      </ProductCard>
+      <ProductCard>
+        <ProductImage src={cupcake} alt="Produto 4" />
+      </ProductCard>
     </ProductGallery>
   </PopularProductsContainer>
 );

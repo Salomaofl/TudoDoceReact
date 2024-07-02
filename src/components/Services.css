@@ -1,32 +1,57 @@
-/* Estilos para a seção de Serviços */
+/* Adicione as fontes */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
+
 .section {
   padding: 60px 20px;
   text-align: center;
+  background: #f5f5f7;
 }
 
 .section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #A47240;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
-.section .card-container {
+.card-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.section .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   max-width: 300px;
   text-align: center;
 }
 
 .card img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #333;
+  font-family: 'SF Pro Display', sans-serif;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }

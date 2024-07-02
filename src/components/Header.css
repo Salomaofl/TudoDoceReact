@@ -16,8 +16,8 @@ header a {
 }
 
 header a.logo {
-  width: 111px;
-  height: 90px;
+  width: 190px; /* Aumente o tamanho da logo aqui */
+  height: 130px; /* Aumente o tamanho da logo aqui */
   background-size: cover;
 }
 

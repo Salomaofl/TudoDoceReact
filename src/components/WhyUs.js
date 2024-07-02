@@ -2,31 +2,45 @@ import React from 'react';
 import styled from 'styled-components';
 
 const WhyUsContainer = styled.section`
-  padding: 30px 20px;
+  padding: 60px 20px;
   text-align: center;
+  background: #f5f5f7;
 `;
 
 const WhyUsTitle = styled.h2`
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #A47240;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: 'SF Pro Display', sans-serif;
 `;
 
 const FeaturesContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  gap: 40px;
 `;
 
 const Feature = styled.div`
   flex: 1;
-  min-width: 200px;
-  margin: 10px;
-  padding: 20px;
+  min-width: 250px;
+  margin: 20px;
+  padding: 30px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+`;
+
+const FeatureText = styled.p`
+  font-size: 18px;
+  color: #666;
+  font-family: 'SF Pro Display', sans-serif;
 `;
 
 const WhyUs = () => (
@@ -34,13 +48,13 @@ const WhyUs = () => (
     <WhyUsTitle>Por que escolher a Tudo Doce</WhyUsTitle>
     <FeaturesContainer className="features">
       <Feature className="feature">
-        <p>Utilizamos os melhores ingredientes</p>
+        <FeatureText>Utilizamos os melhores ingredientes</FeatureText>
       </Feature>
       <Feature className="feature">
-        <p>Doces personalizados para cada ocasião</p>
+        <FeatureText>Doces personalizados para cada ocasião</FeatureText>
       </Feature>
       <Feature className="feature">
-        <p>Entrega rápida e segura</p>
+        <FeatureText>Entrega rápida e segura</FeatureText>
       </Feature>
     </FeaturesContainer>
   </WhyUsContainer>
