@@ -1,58 +1,62 @@
-/* Estilos para o Header */
 header {
-  background-color: #A5B4BB;
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #A5B4BB;
 }
 
-header a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
+.logo img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
 }
 
-header a.logo {
-  width: 190px; /* Aumente o tamanho da logo aqui */
-  height: 130px; /* Aumente o tamanho da logo aqui */
-  background-size: cover;
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-grow: 1;
+  list-style: none;
 }
 
 .nav-links a {
-  margin: 0 20px;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  font-size: 18px;
+  margin: 0 1rem;
 }
 
-.menu-icon {
-  display: none; /* Esconder no desktop */
+.nav-links.active a {
+  color: yellow; /* Exemplo de mudança de cor quando o menu está ativo */
 }
 
 @media (max-width: 768px) {
   .menu-icon {
-    display: block;
-    cursor: pointer;
+    display: flex;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #A5B4BB;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
+    background: #333;
   }
 
   .nav-links.active {
@@ -60,6 +64,6 @@ header a.logo {
   }
 
   .nav-links a {
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 }
