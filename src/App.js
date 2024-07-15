@@ -68,8 +68,8 @@ const App = () => {
       <Header />
       <Hero />
       <Services />
-      <WhyUs />
       <PopularProducts />
+      <WhyUs />
       <Contact />
       <Footer />
     </div>

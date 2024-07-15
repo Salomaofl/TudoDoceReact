@@ -20,12 +20,17 @@ const PopularProductsTitle = styled.h2`
 const ProductGallery = styled.div`
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px; /* Reduzi o espaçamento entre os cards para telas menores */
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap; /* Quebra para várias linhas em telas menores */
+    gap: 10px; /* Ajuste o espaçamento entre os cards para telas menores */
+  }
 `;
 
 const ProductCard = styled.div`
-  width: 250px; /* Largura fixa do card */
-  margin: 20px;
+  width: 250px;
+  margin: 10px;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -35,6 +40,14 @@ const ProductCard = styled.div`
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    width: calc(50% - 20px); /* 50% do espaço disponível menos o espaçamento */
+  }
+
+  @media (max-width: 480px) {
+    width: calc(100% - 20px); /* Utiliza todo o espaço disponível */
   }
 `;
 
