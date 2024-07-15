@@ -15,7 +15,7 @@ const FooterText = styled.p`
 
 const Footer = () => (
   <FooterContainer>
-    <FooterText>&copy; 2023 Confeiteira Gourmet. Todos os direitos reservados.</FooterText>
+    <FooterText>&copy; 2023 Tudo Doce. Todos os direitos reservados.</FooterText>
   </FooterContainer>
 );
 

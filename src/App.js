@@ -5,7 +5,6 @@ import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import PopularProducts from './components/PopularProducts';
 import Contact from './components/Contact';
-
 import Footer from './components/Footer';
 import './App.css';
 
@@ -72,7 +71,6 @@ const App = () => {
       <WhyUs />
       <PopularProducts />
       <Contact />
-
       <Footer />
     </div>
   );

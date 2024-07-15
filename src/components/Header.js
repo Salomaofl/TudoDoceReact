@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header>
-      <a href="#home" className="logo" style={{ backgroundImage: `url(${logo})` }}></a>
+      <a className="logo" href="/" aria-label="Logo da Empresa" style={{ backgroundImage: `url(${logo})` }}></a>
       <nav>
         <div className="menu-icon" onClick={toggleMenu}>
           <span></span>
@@ -20,10 +20,8 @@ const Header = () => {
         </div>
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <a href="#services">Serviços</a>
-          <a href="#whyus">Por Que Nós</a>
+          <a href="#WhyUs">Por Que Nós</a> {/* Adicionei o caractere '#' para corrigir o link */}
           <a href="#products">Produtos</a>
-          <a href="#contact">Contato</a>
-          <a href="#delivery">Entrega & Pagamento</a>
         </div>
       </nav>
     </header>

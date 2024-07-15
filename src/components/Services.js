@@ -11,13 +11,13 @@ const Services = () => {
       <div className="card-container">
         <div className="card">
           <img src={cupcake} alt="Serviço 1" />
-          <h3>Serviço 1</h3>
-          <p>Descrição do serviço 1.</p>
+          <h3>Doces para festa </h3>
+          <p>Deliciosos doces para festas</p>
         </div>
         <div className="card">
           <img src={logo} alt="Serviço 2" />
-          <h3>Serviço 2</h3>
-          <p>Descrição do serviço 2.</p>
+          <h3>Bem casado</h3>
+          <p>Deliciosos, tradicionais e muito bonitos</p>
         </div>
         <div className="card">
           <img src={image1} alt="Serviço 3" />

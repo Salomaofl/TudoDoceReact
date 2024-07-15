@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContactContainer = styled.section`
-  background-color: #fff;
   padding: 60px 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -12,7 +11,7 @@ const ContactContainer = styled.section`
 `;
 
 const ContactTitle = styled.h2`
-  font-size: 36px;
+  font-size: 26px;
   margin-bottom: 40px;
   color: #333;
   font-family: 'SF Pro Display', sans-serif;
@@ -52,14 +51,14 @@ const ContactButton = styled.button`
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #d77a8e;
+    background-color: #e495a9;
     transform: scale(1.05);
   }
 `;
 
 const Contact = () => (
   <ContactContainer className="contact">
-    <ContactTitle>Tem alguma pergunta?</ContactTitle>
+    <ContactTitle>Ficou alguma duvida? Nos mande uma mensagem!</ContactTitle>
     <ContactForm id="contactForm">
       <ContactInput type="text" id="name" placeholder="Seu Nome" required />
       <ContactInput type="text" id="message" placeholder="Sua Pergunta" required />
