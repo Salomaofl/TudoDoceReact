@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import color from '../assets/color.jpg';
 import oi from '../assets/oi.jpg';
 import cupcake from '../assets/cupcake.jpg';
+import cake from '../assets/LogoCake.png';
 
 const PopularProductsContainer = styled.section`
   padding: 60px 20px;
@@ -62,7 +63,7 @@ const PopularProducts = () => (
     <PopularProductsTitle>Doces populares</PopularProductsTitle>
     <ProductGallery className="product-gallery">
       <ProductCard>
-        <ProductImage src={color} alt="Produto 1" />
+        <ProductImage src={cake} alt="Produto 1" />
       </ProductCard>
       <ProductCard>
         <ProductImage src={oi} alt="Produto 2" />
