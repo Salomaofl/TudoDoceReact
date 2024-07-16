@@ -29,6 +29,7 @@
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   max-width: 300px;
   text-align: center;
+  position: relative;
 }
 
 .card img {
@@ -57,7 +58,7 @@
 }
 
 .card button {
-  background-color: #e495a9;
+  background-color: #E495A9;
   border: none;
   border-radius: 5px;
   color: white;
@@ -70,5 +71,93 @@
 }
 
 .card button:hover {
-  background-color: #e495a9;
+  background-color: #E495A9;
 }
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-controls button {
+  background-color: #E495A9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+  background-color: #0056b3;
+}
+
+.card .mobile-button {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #E495A9;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.card .mobile-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .card .mobile-button {
+    display: block;
+  }
+
+  .card button {
+    display: none;
+  }
+}
+
+
+/* Outros estilos existentes... */
+
+.card .flavors {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.card .flavors h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.card .flavors label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.card .flavors input {
+  margin-right: 5px;
+}
+
+.card .mobile-button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .card .mobile-button {
+    display: inline-block;
+  }
+}
+
+

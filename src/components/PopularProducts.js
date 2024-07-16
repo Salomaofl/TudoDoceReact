@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import oi from '../assets/oi.jpg';
-import cupcake from '../assets/cupcake.jpg';
-import cake from '../assets/LogoCake.png';
+import cardP from '../assets/cardP.png';
+
 
 const PopularProductsContainer = styled.section`
   padding: 60px 20px;
@@ -62,16 +61,16 @@ const PopularProducts = () => (
     <PopularProductsTitle>Doces populares</PopularProductsTitle>
     <ProductGallery className="product-gallery">
       <ProductCard>
-        <ProductImage src={cake} alt="Produto 1" />
+        <ProductImage src={cardP} alt="Produto 1" />
       </ProductCard>
       <ProductCard>
-        <ProductImage src={oi} alt="Produto 2" />
+        <ProductImage src={cardP} alt="Produto 2" />
       </ProductCard>
       <ProductCard>
-        <ProductImage src={oi} alt="Produto 3" />
+        <ProductImage src={cardP} alt="Produto 3" />
       </ProductCard>
       <ProductCard>
-        <ProductImage src={cupcake} alt="Produto 4" />
+        <ProductImage src={cardP} alt="Produto 4" />
       </ProductCard>
     </ProductGallery>
   </PopularProductsContainer>
