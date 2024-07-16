@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import color from '../assets/color.jpg';
 import oi from '../assets/oi.jpg';
 import cupcake from '../assets/cupcake.jpg';
 import cake from '../assets/LogoCake.png';
