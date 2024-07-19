@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Services.css';
 import cardPP from '../assets/cardPP.png';
 import cardP from '../assets/cardP.png';
@@ -7,9 +7,11 @@ import tradicional from '../assets/Tradicional.png';
 import Primium from '../assets/Primium.png';
 import Brownie from '../assets/Brownie.png';
 
+
 const Services = () => {
   const [currentSet, setCurrentSet] = useState(0);
   const [selectedFlavors, setSelectedFlavors] = useState({});
+  const cardContainerRef = useRef(null);
 
   const cardSets = [
     {
@@ -35,8 +37,6 @@ const Services = () => {
         }
       ]
     },
-
-
     {
       title: 'Cento de Doces',
       cards: [
@@ -44,19 +44,19 @@ const Services = () => {
           img: tradicional,
           title: 'Tradicional',
           details: 'Quantidade: 100 - Valor:R$ 140,00',
-          flavors: ['Brigadeiro', 'Brigadeiro Branco', 'Beijinho','Bicho de pé','Dois amores','Ninho']
+          flavors: ['Brigadeiro', 'Brigadeiro Branco', 'Beijinho', 'Bicho de pé', 'Dois amores', 'Ninho']
         },
         {
           img: Primium,
           title: 'Premium',
           details: 'Quantidade: 100 - Valor:R$ 170,00',
-          flavors: ['Brigadeiro Belga', 'Ferreiro', 'Ninho com Nutella','Maracujá', 'Surpresa de uva', 'Limão', 'Sensação']
+          flavors: ['Brigadeiro Belga', 'Ferreiro', 'Ninho com Nutella', 'Maracujá', 'Surpresa de uva', 'Limão', 'Sensação']
         },
         {
           img: Brownie,
           title: 'Mini Brownies',
           details: 'Quantidade: 100 - Valor:R$ 150,00',
-          flavors: ['Brigadeiro', 'Ninho', 'Doce de leite','Ninho com Nutella']
+          flavors: ['Brigadeiro', 'Ninho', 'Doce de leite', 'Ninho com Nutella']
         }
       ]
     }
@@ -82,16 +82,18 @@ const Services = () => {
 
   const nextSet = () => {
     setCurrentSet((prevSet) => (prevSet + 1) % cardSets.length);
+    cardContainerRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const prevSet = () => {
     setCurrentSet((prevSet) => (prevSet - 1 + cardSets.length) % cardSets.length);
+    cardContainerRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section id="services" className="section">
       <h2>{cardSets[currentSet].title}</h2>
-      <div className="card-container">
+      <div className="card-container" ref={cardContainerRef}>
         {cardSets[currentSet].cards.map((card, index) => (
           <div className="card" key={index}>
             <img src={card.img} alt={`Serviço ${index + 1}`} />
@@ -113,8 +115,10 @@ const Services = () => {
                 ))}
               </div>
             )}
-            <button onClick={() => handleChoose(card)}>Escolher</button>
-            <button className="mobile-button" onClick={() => handleChoose(card)}>+</button>
+            <button className="modern-button" onClick={() => handleChoose(card)}>
+
+              Adicionar pedido
+            </button>
           </div>
         ))}
       </div>

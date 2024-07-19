@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
+
 const App = () => {
   useEffect(() => {
     const cards = document.querySelectorAll('.card');
