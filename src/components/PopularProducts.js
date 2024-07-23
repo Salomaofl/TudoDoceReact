@@ -7,6 +7,7 @@ const PopularProductsContainer = styled.section`
   padding: 60px 20px;
   text-align: center;
   background: #f5f5f7;
+
 `;
 
 const PopularProductsTitle = styled.h2`

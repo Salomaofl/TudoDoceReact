@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'; // Importa os ícones do react-icons
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ImgTeste from '../assets/LogoTeste.png';
+import Fundo from '../assets/FundoSite.png';
 
 const WhyUsContainer = styled.section`
   padding: 60px 20px;
   text-align: center;
-  background: #f5f5f7;
+  background: url(${Fundo}) no-repeat center center/cover;
+
 `;
 
 const WhyUsTitle = styled.h2`
@@ -45,11 +48,15 @@ const FeatureText = styled.p`
   font-size: 18px;
   color: #666;
   font-family: 'SF Pro Display', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 `;
 
 const CarouselContainer = styled.div`
   width: 90%;
-  max-width: 400px; /* Tamanho máximo do card */
+  max-width: 600px; /* Tamanho máximo do card */
   .slick-slide img {
     width: 100%;
     height: auto; /* Mantém a proporção da imagem */
@@ -99,17 +106,19 @@ const WhyUs = () => {
               <img src={ImgTeste} alt="Foto 1" />
             </div>
             <div>
-              <img src={ImgTeste} alt="Foto 2" />
+              <img src="image2.jpg" alt="Foto 2" />
             </div>
             <div>
-              <img src={ImgTeste} alt="Foto 3" />
+              <img src="image3.jpg" alt="Foto 3" />
             </div>
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
         </CarouselContainer>
-
         <Feature className="feature">
-          <FeatureText>Utilizamos os melhores ingredientes</FeatureText>
+          <FeatureText>
+            <FaInstagram size={24} color="#E4405F" /> @tudodocee__
+            <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
+          </FeatureText>
         </Feature>
       </FeaturesContainer>
     </WhyUsContainer>

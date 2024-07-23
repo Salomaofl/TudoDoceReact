@@ -8,6 +8,7 @@ const ContactContainer = styled.section`
   margin: 40px auto;
   max-width: 600px;
   text-align: center;
+
 `;
 
 const ContactTitle = styled.h2`
