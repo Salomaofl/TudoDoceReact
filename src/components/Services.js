@@ -6,6 +6,7 @@ import cardM from '../assets/cardM.png';
 import tradicional from '../assets/Tradicional.png';
 import Primium from '../assets/Primium.png';
 import Brownie from '../assets/Brownie.png';
+import ImgTeste from '../assets/LogoTeste.png'
 
 
 const Services = () => {
@@ -20,7 +21,7 @@ const Services = () => {
         {
           img: cardPP,
           title: 'Bolo PP',
-          details: 'Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
+          details: 'Bolo de 1kg Serve 10 pessoas. Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
           price: 'R$ 130,00'
         },
         {
@@ -36,7 +37,29 @@ const Services = () => {
           price: 'R$ 250,00'
         }
       ]
-    },
+    },{
+            title: 'Kit com Salgado',
+            cards: [
+              {
+                img: cardPP,
+                title: 'Bolo PP + 100 Salgados',
+                details: 'Bolo de 1kg Serve 10 pessoas. Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
+                price: 'R$ 200,00'
+              },
+              {
+                img: cardP,
+                title: 'Bolo tamanho P  + 150 Salgados',
+                details: 'Incluso no pacote: 40 Doces tradicionais + Topo + Velinha',
+                price: 'R$ 280,00'
+              },
+              {
+                img: cardM,
+                title: 'Bolo M + 200 Salgados',
+                details: 'Incluso no pacote: 60 Doces tradicionais + Topo + Velinha',
+                price: 'R$ 370,00'
+              }
+            ]
+          },
     {
       title: 'Cento de Doces',
       cards: [
@@ -59,7 +82,29 @@ const Services = () => {
           flavors: ['Brigadeiro', 'Ninho', 'Doce de leite', 'Ninho com Nutella']
         }
       ]
-    }
+    },{
+            title: 'Mais uma area para produtos',
+            cards: [
+              {
+                img: ImgTeste,
+                title: 'Bolo PP',
+                details: 'Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
+                price: 'R$ 130,00'
+              },
+              {
+                img: ImgTeste,
+                title: 'Bolo P',
+                details: 'Incluso no pacote: 40 Doces tradicionais + Topo + Velinha',
+                price: 'R$ 185,00'
+              },
+              {
+                img: ImgTeste,
+                title: 'Bolo M',
+                details: 'Incluso no pacote: 60 Doces tradicionais + Topo + Velinha',
+                price: 'R$ 250,00'
+              }
+            ]
+          }
   ];
 
   const handleChoose = (card) => {

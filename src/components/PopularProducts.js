@@ -58,7 +58,7 @@ const ProductImage = styled.img`
 
 const PopularProducts = () => (
   <PopularProductsContainer className="popular-products">
-    <PopularProductsTitle>Doces populares</PopularProductsTitle>
+    <PopularProductsTitle>Doces para encomendas</PopularProductsTitle>
     <ProductGallery className="product-gallery">
       <ProductCard>
         <ProductImage src={cardP} alt="Produto 1" />
@@ -68,9 +68,6 @@ const PopularProducts = () => (
       </ProductCard>
       <ProductCard>
         <ProductImage src={cardP} alt="Produto 3" />
-      </ProductCard>
-      <ProductCard>
-        <ProductImage src={cardP} alt="Produto 4" />
       </ProductCard>
     </ProductGallery>
   </PopularProductsContainer>
