@@ -11,7 +11,6 @@ const WhyUsContainer = styled.section`
   padding: 60px 20px;
   text-align: center;
   background: url(${Fundo}) no-repeat center center/cover;
-
 `;
 
 const WhyUsTitle = styled.h2`
@@ -44,7 +43,7 @@ const Feature = styled.div`
   }
 `;
 
-const FeatureText = styled.p`
+const FeatureText = styled.div`
   font-size: 18px;
   color: #666;
   font-family: 'SF Pro Display', sans-serif;
@@ -52,6 +51,12 @@ const FeatureText = styled.p`
   align-items: center;
   justify-content: space-around;
   gap: 10px;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+
+  @media (max-width: 480px) {
+    flex-direction: column; /* Alinha os itens verticalmente em telas muito pequenas */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
 `;
 
 const CarouselContainer = styled.div`
@@ -116,8 +121,12 @@ const WhyUs = () => {
         </CarouselContainer>
         <Feature className="feature">
           <FeatureText>
-            <FaInstagram size={24} color="#E4405F" /> @tudodocee__
-            <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
+            <div>
+              <FaInstagram size={24} color="#E4405F" /> @tudodocee__
+            </div>
+            <div>
+              <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
+            </div>
           </FeatureText>
         </Feature>
       </FeaturesContainer>
