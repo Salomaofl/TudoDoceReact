@@ -82,7 +82,7 @@ const ProductButton = styled.a`
 
 const PopularProducts = () => (
   <PopularProductsContainer className="popular-products">
-    <PopularProductsTitle>Popular Products</PopularProductsTitle>
+    <PopularProductsTitle>Produtos</PopularProductsTitle>
     <ProductGallery className="product-gallery">
       <ProductCard>
         <ProductImage src={corporativo} alt="Produto 1" />

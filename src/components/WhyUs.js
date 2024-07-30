@@ -4,7 +4,9 @@ import Slider from 'react-slick';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'; // Importa os ícones do react-icons
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ImgTeste from '../assets/LogoTeste.png';
+import Img1 from '../assets/encomendas.png';
+import Img2 from '../assets/bolosEdoces.png';
+import Img3 from '../assets/corporativos.png';
 import Fundo from '../assets/FundoSite.png';
 
 const WhyUsContainer = styled.section`
@@ -108,13 +110,13 @@ const WhyUs = () => {
         <CarouselContainer>
           <Slider {...settings}>
             <div>
-              <img src={ImgTeste} alt="Foto 1" />
+              <img src={Img1} alt="Foto 1" />
             </div>
             <div>
-              <img src="image2.jpg" alt="Foto 2" />
+              <img src={Img2} alt="Foto 2" />
             </div>
             <div>
-              <img src="image3.jpg" alt="Foto 3" />
+              <img src={Img3} alt="Foto 3" />
             </div>
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
