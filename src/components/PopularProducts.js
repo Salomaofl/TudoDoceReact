@@ -87,7 +87,7 @@ const PopularProducts = () => (
       <ProductCard>
         <ProductImage src={corporativo} alt="Produto 1" />
         <h3>Doces Corporativos</h3>
-        <ProductButton href="https://wa.me/p/7536936153016210/5511959030948" target="_blank" rel="noopener noreferrer">Solicitar</ProductButton>
+        <ProductButton href="https://wa.me/p/26643003818624345/5511959030948" target="_blank" rel="noopener noreferrer">Solicitar</ProductButton>
       </ProductCard>
       <ProductCard>
         <ProductImage src={feira} alt="Produto 2" />

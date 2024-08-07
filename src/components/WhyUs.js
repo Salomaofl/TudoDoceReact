@@ -8,6 +8,9 @@ import Img1 from '../assets/encomendas.png';
 import Img2 from '../assets/bolosEdoces.png';
 import Img3 from '../assets/corporativos.png';
 import Fundo from '../assets/FundoSite.png';
+import img1 from '../assets/002.jpg';
+import img2 from '../assets/003.jpg';
+import img8 from '../assets/008.jpg';
 
 const WhyUsContainer = styled.section`
   padding: 60px 20px;
@@ -105,19 +108,31 @@ const WhyUs = () => {
 
   return (
     <WhyUsContainer className="why-us">
-      <WhyUsTitle>Por que escolher a Tudo Doce</WhyUsTitle>
+      <WhyUsTitle>Nossos produtos</WhyUsTitle>
       <FeaturesContainer className="features">
         <CarouselContainer>
           <Slider {...settings}>
             <div>
-              <img src={Img1} alt="Foto 1" />
+              <img src={img1} alt="Foto 1" />
             </div>
             <div>
-              <img src={Img2} alt="Foto 2" />
+              <img src={img2} alt="Foto 2" />
             </div>
             <div>
-              <img src={Img3} alt="Foto 3" />
+              <img src={img8} alt="Foto 3" />
             </div>
+            <div>
+             <img src={Img3} alt="Foto 4" />
+            </div>
+             <div>
+             <img src={Img1} alt="Foto 4" />
+             </div>
+             <div>
+             <img src={Img2} alt="Foto 4" />
+             </div>
+             <div>
+             <img src={Img3} alt="Foto 4" />
+             </div>
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
         </CarouselContainer>
