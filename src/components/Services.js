@@ -6,7 +6,7 @@ import cardM from '../assets/cardM.png';
 import tradicional from '../assets/Tradicional.png';
 import Primium from '../assets/Primium.png';
 import Brownie from '../assets/Brownie.png';
-import ImgTeste from '../assets/LogoTeste.png'
+
 
 
 const Services = () => {
@@ -82,29 +82,7 @@ const Services = () => {
           flavors: ['Brigadeiro', 'Ninho', 'Doce de leite', 'Ninho com Nutella']
         }
       ]
-    },{
-            title: 'Mais uma area para produtos',
-            cards: [
-              {
-                img: ImgTeste,
-                title: 'Bolo PP',
-                details: 'Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
-                price: 'R$ 130,00'
-              },
-              {
-                img: ImgTeste,
-                title: 'Bolo P',
-                details: 'Incluso no pacote: 40 Doces tradicionais + Topo + Velinha',
-                price: 'R$ 185,00'
-              },
-              {
-                img: ImgTeste,
-                title: 'Bolo M',
-                details: 'Incluso no pacote: 60 Doces tradicionais + Topo + Velinha',
-                price: 'R$ 250,00'
-              }
-            ]
-          }
+    }
   ];
 
   const handleChoose = (card) => {

@@ -136,16 +136,27 @@ const WhyUs = () => {
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
         </CarouselContainer>
-        <Feature className="feature">
-          <FeatureText>
-            <div>
-              <FaInstagram size={24} color="#E4405F" /> @tudodocee__
-            </div>
-            <div>
-              <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
-            </div>
-          </FeatureText>
-        </Feature>
+        <div className="features-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Feature className="feature">
+            <FeatureText>
+              <div>
+                      <a href="https://www.instagram.com/tudodocee__" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <FaInstagram size={24} color="#E4405F" /> @tudodocee__
+                      </a>
+                    </div>
+            </FeatureText>
+          </Feature>
+
+          <Feature className="feature">
+            <FeatureText>
+              <div>
+                <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
+              </div>
+            </FeatureText>
+          </Feature>
+        </div>
+
+
       </FeaturesContainer>
     </WhyUsContainer>
   );
