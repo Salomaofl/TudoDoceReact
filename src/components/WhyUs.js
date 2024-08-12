@@ -87,6 +87,18 @@ const CarouselContainer = styled.div`
   }
 `;
 
+const FeaturesWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
 const WhyUs = () => {
   const settings = {
     dots: true,
@@ -122,28 +134,28 @@ const WhyUs = () => {
               <img src={img8} alt="Foto 3" />
             </div>
             <div>
-             <img src={Img3} alt="Foto 4" />
+              <img src={Img3} alt="Foto 4" />
             </div>
-             <div>
-             <img src={Img1} alt="Foto 4" />
-             </div>
-             <div>
-             <img src={Img2} alt="Foto 4" />
-             </div>
-             <div>
-             <img src={Img3} alt="Foto 4" />
-             </div>
+            <div>
+              <img src={Img1} alt="Foto 5" />
+            </div>
+            <div>
+              <img src={Img2} alt="Foto 6" />
+            </div>
+            <div>
+              <img src={Img3} alt="Foto 7" />
+            </div>
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
         </CarouselContainer>
-        <div className="features-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <FeaturesWrapper>
           <Feature className="feature">
             <FeatureText>
               <div>
-                      <a href="https://www.instagram.com/tudodocee__" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <FaInstagram size={24} color="#E4405F" /> @tudodocee__
-                      </a>
-                    </div>
+                <a href="https://www.instagram.com/tudodocee__" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <FaInstagram size={24} color="#E4405F" /> @tudodocee__
+                </a>
+              </div>
             </FeatureText>
           </Feature>
 
@@ -154,9 +166,7 @@ const WhyUs = () => {
               </div>
             </FeatureText>
           </Feature>
-        </div>
-
-
+        </FeaturesWrapper>
       </FeaturesContainer>
     </WhyUsContainer>
   );
