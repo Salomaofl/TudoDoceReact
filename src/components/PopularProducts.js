@@ -81,7 +81,7 @@ const ProductButton = styled.a`
 `;
 
 const PopularProducts = () => (
-  <PopularProductsContainer className="popular-products">
+  <PopularProductsContainer id="products" className="popular-products">
     <PopularProductsTitle>Produtos</PopularProductsTitle>
     <ProductGallery className="product-gallery">
       <ProductCard>

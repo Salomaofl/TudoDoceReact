@@ -22,7 +22,7 @@ const Header = () => {
         </div>
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <a href="#services">Serviços</a>
-          <a href="#WhyUs">Por Que Nós</a>
+          <a href="#whyus">Por Que Nós</a>
           <a href="#products">Produtos</a>
         </div>
       </nav>
@@ -31,3 +31,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

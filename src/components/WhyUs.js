@@ -4,13 +4,16 @@ import Slider from 'react-slick';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'; // Importa os ícones do react-icons
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Img1 from '../assets/encomendas.png';
-import Img2 from '../assets/bolosEdoces.png';
-import Img3 from '../assets/corporativos.png';
 import Fundo from '../assets/FundoSite.png';
-import img1 from '../assets/002.jpg';
-import img2 from '../assets/003.jpg';
-import img8 from '../assets/008.jpg';
+import f1 from '../assets/1.png';
+import f2 from '../assets/2.png';
+import f3 from '../assets/3.png';
+import f4 from '../assets/4.png';
+import f5 from '../assets/5.png';
+import f002 from '../assets/002.jpg';
+import f003 from '../assets/003.jpg';
+
+
 
 const WhyUsContainer = styled.section`
   padding: 60px 20px;
@@ -119,31 +122,31 @@ const WhyUs = () => {
   };
 
   return (
-    <WhyUsContainer className="why-us">
+    <WhyUsContainer id="whyus" className="why-us">
       <WhyUsTitle>Nossos produtos</WhyUsTitle>
       <FeaturesContainer className="features">
         <CarouselContainer>
           <Slider {...settings}>
             <div>
-              <img src={img1} alt="Foto 1" />
+              <img src={f1} alt="Foto 1" />
             </div>
             <div>
-              <img src={img2} alt="Foto 2" />
+              <img src={f2} alt="Foto 2" />
             </div>
             <div>
-              <img src={img8} alt="Foto 3" />
+              <img src={f3} alt="Foto 3" />
             </div>
             <div>
-              <img src={Img3} alt="Foto 4" />
+              <img src={f4} alt="Foto 4" />
             </div>
             <div>
-              <img src={Img1} alt="Foto 5" />
+              <img src={f5} alt="Foto 5" />
             </div>
             <div>
-              <img src={Img2} alt="Foto 6" />
+              <img src={f002} alt="Foto 6" />
             </div>
             <div>
-              <img src={Img3} alt="Foto 7" />
+              <img src={f003} alt="Foto 7" />
             </div>
             {/* Adicione mais imagens conforme necessário */}
           </Slider>
