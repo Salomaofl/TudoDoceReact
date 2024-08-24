@@ -89,7 +89,7 @@ const Services = () => {
     const selected = selectedFlavors[card.title] || [];
     const flavors = selected.length > 0 ? selected.join(', ') : 'Nenhum sabor selecionado';
     const message = `Olá, gostaria de saber mais sobre o pacote: ${card.title} - ${card.details}. Sabores escolhidos: ${flavors}`;
-    const whatsappURL = `https://wa.me/5511983922181?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/5511959030948?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
 
