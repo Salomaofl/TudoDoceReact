@@ -39,7 +39,7 @@ const App = () => {
 
         const name = document.getElementById('name').value;
         const message = document.getElementById('message').value;
-        const phoneNumber = '5511983922181'; // Substitua pelo número de telefone da loja.
+        const phoneNumber = '5511965119913'; // Substitua pelo número de telefone da loja.
 
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=Nome: ${encodeURIComponent(name)}%0ADúvida: ${encodeURIComponent(message)}`;
 

@@ -165,7 +165,7 @@ const WhyUs = () => {
           <Feature className="feature">
             <FeatureText>
               <div>
-                <FaWhatsapp size={24} color="#25D366" /> (11) 95903-0948
+                <FaWhatsapp size={24} color="#25D366" /> (11) 96511-9913
               </div>
             </FeatureText>
           </Feature>
