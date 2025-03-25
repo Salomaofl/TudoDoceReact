@@ -21,20 +21,20 @@ const Services = () => {
         {
           img: cardPP,
           title: 'Bolo PP',
-          details: 'Bolo de 1kg serve até 10 pessoas. Incluso no pacote: 25 Doces tradicionais + Topo + Velinha.',
-          price: 'R$ 130,00'
+          details: 'Bolo de 1kg serve até 10 pessoas. Incluso no pacote: 50 Doces tradicionais + Topo + Velinha.',
+          price: 'R$ 178,00'
         },
         {
           img: cardP,
           title: 'Bolo P',
-          details: 'Bolo de 1,5kg serve até 15 pessoas. Incluso no pacote: 40 Doces tradicionais + Topo + Velinha',
-          price: 'R$ 185,00'
+          details: 'Bolo de 1,5kg serve até 15 pessoas. Incluso no pacote: 60 Doces tradicionais + Topo + Velinha',
+          price: 'R$ 235,00'
         },
         {
           img: cardM,
           title: 'Bolo M',
-          details: 'Bolo de 2kg serve até 20 pessoas. Incluso no pacote: 60 Doces tradicionais + Topo + Velinha',
-          price: 'R$ 250,00'
+          details: 'Bolo de 2kg serve até 20 pessoas. Incluso no pacote: 100 Doces tradicionais + Topo + Velinha',
+          price: 'R$ 330,00'
         }
       ]
     },{
